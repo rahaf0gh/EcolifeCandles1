@@ -229,7 +229,7 @@ section .cards .card .card-content{
     }
     /* product page -------------------- */
     .Products-sections .card{
-        width: 100%;
+        width: 140%;
     }
     .contactus-header{
         @apply px-12;
@@ -237,9 +237,7 @@ section .cards .card .card-content{
     .contactus-header .contact-content .text{
         @apply w-full text-center;
     }
-    /* .contactus-header .contact-content .img{
-        width: 100%;
-    } */
+
     .contactus-header .contact-content .img{
         width: 350px;
     }
@@ -256,5 +254,9 @@ section .cards .card .card-content{
     }
     #UlNav .Nav-icon{
         border-radius: 0;
+    }
+    /* --------- table  */
+    .table-container{
+        @apply mx-2
     }
 }
