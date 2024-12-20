@@ -39,7 +39,7 @@ footer .contact-us{
 }
 /* ---------------- */
 nav, footer{
-    @apply flex justify-between items-center px-12 max-sm:px-16;
+    @apply flex justify-between items-center px-12 py-6;
 }
 .logo a{
     line-height: 9px;
@@ -86,7 +86,8 @@ nav, footer{
 .headerFont {
     font-family: "Playwrite GB S Guides", cursive;
     font-weight: 400;
-    font-style: italic;
+    /* padding: 14px; */
+    /* font-style: italic; */
 }
 
 header p{
@@ -162,12 +163,16 @@ section .cards .card .card-content{
     background-color: #2A3663;
     color: #D8DBBD;
 }
-
+/* ----------  */
+.table-container{
+    @apply px-4;
+    
+}
 /* ----------------- Fixed Size */
 
   @media not all and (min-width: 640px) {
     nav, footer{
-        @apply p-4 px-12 relative;
+        @apply p-4 px-8 relative;
     }
     #UlNav{
         position: absolute;
@@ -197,7 +202,7 @@ section .cards .card .card-content{
         display: block;
     }
     .logo a, footer .location a{
-        @apply text-2xl;
+        @apply text-3xl;
         line-height: 16px;
     }
     /* ---------------------- header  */
@@ -205,7 +210,7 @@ section .cards .card .card-content{
         @apply p-7;
     }
     header .big-text{
-        font-size: 180px;
+        font-size: 140px;
     }
     header p{
         font-size: 18px;
@@ -257,6 +262,6 @@ section .cards .card .card-content{
     }
     /* --------- table  */
     .table-container{
-        @apply mx-2;
+        @apply mx-2 px-6;
     }
 }
