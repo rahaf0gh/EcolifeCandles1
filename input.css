@@ -229,7 +229,7 @@ section .cards .card .card-content{
     }
     /* product page -------------------- */
     .Products-sections .card{
-        width: 140%;
+        width: 350px;
     }
     .contactus-header{
         @apply px-12;
@@ -257,6 +257,6 @@ section .cards .card .card-content{
     }
     /* --------- table  */
     .table-container{
-        @apply mx-2
+        @apply mx-2;
     }
 }
