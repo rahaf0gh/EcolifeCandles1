@@ -1,0 +1,260 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+.bg-color,
+nav,
+footer{
+    background-color: #D8DBBD;
+}
+.text-colour,
+.logo,
+#UlNav,
+footer .contact-us{
+    color: #2A3663;
+}
+.product-name b,
+.customer-img,
+.cart-title{
+    color: #18234a;
+}
+.card-btn{
+    background-color: #2A3663;
+    color: #fafced;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.p-colour{
+    color: #B59F78;
+}
+/* -------------  */
+.flex-bet-center{
+    @apply flex justify-between items-center;
+}
+.transition{
+    transition: all 0.2 ease-in;
+}
+.Shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* ---------------- */
+nav, footer{
+    @apply flex justify-between items-center px-12 max-sm:px-16;
+}
+.logo a{
+    line-height: 9px;
+}
+#UlNav{
+    @apply items-center gap-1 flex text-lg font-medium relative p-3;
+}
+#UlNav a{
+    @apply cursor-pointer rounded-sm px-4 py-3;
+}
+#UlNav a:hover{
+    background-color: #abae8976;
+    transition: all 0.2s ease-in-out;
+}
+#UlNav .Nav-icon{
+    border-radius: 50%;
+}
+
+#bar-btn,
+#amark-btn{
+    @apply  text-3xl cursor-pointer;
+    display: none;
+    color: #2A3663;
+}
+
+/* -------------  */
+.homeHeader{
+    background: url(imgs/homepage.png);
+    width: 100%;
+    height: 90vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big-text{
+    font-size: 300px;
+    font-weight: bolder;
+
+    margin-top: -50px;
+    @apply text-slate-100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S+Guides:ital@0;1&display=swap');
+.headerFont {
+    font-family: "Playwrite GB S Guides", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header p{
+    @apply text-2xl;
+}
+/* -------------------------  */
+section .cards .card .card-content{
+    width: 188px;
+}
+.card:hover, .customer:hover{
+    scale: 1.02;
+    transition: all 0.2s ease-in-out;
+}
+.Products-sections .card:hover{
+    scale: 1;
+}
+
+/* ----------------------- customer feedback  */
+.customers-feedback .customer{
+    @apply p-4;
+    background-color: #D8DBBD;
+    color: #2A3663;
+}   
+/* ----------------------------- contact us page  */
+.contactUs-bg{
+    background-color: #f9f9eeeb;
+      
+}
+.block1{
+    display: block;
+}
+.inputStyle{
+    @apply p-1 rounded-sm;
+    outline: none;
+}
+.twoInput .inputStyle{
+    width: 210px;
+}
+.twoInput .inputSelect{
+    width: 100px;
+}
+.contactus-header .contact-content .img{
+    width: 380px;
+}
+/* --------------------------  */
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+      /* transform: translateX(-100px); */
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      /* transform: translateX(0px); */
+    }
+  }
+.block4{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+/* ------------------------- register*/
+.social-icons a{
+    border: 1px solid #2A3663;
+    padding: 1px 4px;
+    border-radius: 2px;
+
+    font-size: 18px;
+}
+.social-icons a:hover{
+    background-color: #2A3663;
+    color: #D8DBBD;
+}
+
+/* ----------------- Fixed Size */
+
+  @media not all and (min-width: 640px) {
+    nav, footer{
+        @apply p-4 px-12 relative;
+    }
+    #UlNav{
+        position: absolute;
+        
+        @apply flex-col items-center;
+
+        top: 68px;
+        left: 0;
+        width: 100%;
+
+        padding: 0;
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.059);
+        
+        background-color: #D8DBBD;
+    }
+    #UlNav a{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        display: block;
+
+        @apply py-6;
+        color: #2A3663;
+    }
+    #bar-btn{
+        display: block;
+    }
+    .logo a, footer .location a{
+        @apply text-2xl;
+        line-height: 16px;
+    }
+    /* ---------------------- header  */
+    header{
+        @apply p-7;
+    }
+    header .big-text{
+        font-size: 180px;
+    }
+    header p{
+        font-size: 18px;
+    }
+    /* ------------------------- section */
+    section .cards,
+    .Products-sections .cards,
+    .customers-feedback .cards,
+    .contactus-header .contact-content{
+        @apply flex-col;
+    }
+    section .cards .card .card-content{
+        width: 250px;
+    }
+    footer{
+      display: block;
+      text-align: center;
+    }
+    footer .contact-us{
+        font-size: 12px;
+    }
+    /* product page -------------------- */
+    .Products-sections .card{
+        width: 100%;
+    }
+    .contactus-header{
+        @apply px-12;
+    }
+    .contactus-header .contact-content .text{
+        @apply w-full text-center;
+    }
+    /* .contactus-header .contact-content .img{
+        width: 100%;
+    } */
+    .contactus-header .contact-content .img{
+        width: 350px;
+    }
+    .twoInput .inputStyle{
+        width: 62%;
+    }
+    .twoInput .inputSelect{
+        font-size: 16px;
+        width: 102px;
+    }
+    samp{
+        margin-top: 4px;
+        font-size: 12px;
+    }
+    #UlNav .Nav-icon{
+        border-radius: 0;
+    }
+}
